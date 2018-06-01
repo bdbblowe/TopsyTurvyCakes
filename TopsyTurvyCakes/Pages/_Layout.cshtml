@@ -38,13 +38,18 @@
             </nav>
         </div>
         <div class="row">
-            <h2 class="title">My Favorite Recipes</h2>
+            @if (IsSectionDefined("Title"))
+            {
+                @RenderSection("Title", required: false)
+            }
+            else
+            {
+                <h2 class="title">@ViewData["Title"]</h2>
+            }
         </div>
     </header>
     <div class="container">
-
         @RenderBody()
-
     </div>
     <footer>
         <div class="text-center">
