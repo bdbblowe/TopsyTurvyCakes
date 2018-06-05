@@ -1,0 +1,36 @@
+[33mcommit b538eb362be8785fc248d7c2d0ed0ad3f6855679[m
+Author: bdbblowe <bdbblowe@gmail.com>
+Date:   Fri Jun 1 19:39:43 2018 -0500
+
+    added a page model to keep ligic out of View
+
+[33mcommit f21e11ec5d850058b845a6d64ccb84efbec023ae[m
+Merge: 588a8d1 0670d64
+Author: bdbblowe <bdbblowe@gmail.com>
+Date:   Fri Jun 1 06:51:20 2018 -0500
+
+    Merge branch 'master' of https://github.com/bdbblowe/TopsyTurvyCakes
+
+[33mcommit 588a8d1014397e964d6b509cb11c6037261a9381[m
+Author: bdbblowe <bdbblowe@gmail.com>
+Date:   Fri Jun 1 06:46:56 2018 -0500
+
+    reused shared markup with layouts
+
+[33mcommit 0670d64511e2adebe60d8a14c718fda4b6c74fcb[m
+Author: Benjamin Blowe <bdbblowe@gmail.com>
+Date:   Fri Jun 1 05:57:24 2018 -0500
+
+    Create README.md
+
+[33mcommit a17aded36eb8f3917094a66ee9965956ddff85b6[m
+Author: bdbblowe <bdbblowe@gmail.com>
+Date:   Fri Jun 1 05:51:48 2018 -0500
+
+    implemented Razor page basics
+
+[33mcommit 9476903c612f3f986e359ed03cd1af9610f15587[m
+Author: bdbblowe <bdbblowe@gmail.com>
+Date:   Fri Jun 1 02:38:29 2018 -0500
+
+    initial commit
