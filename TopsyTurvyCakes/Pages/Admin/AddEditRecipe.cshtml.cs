@@ -20,6 +20,8 @@ namespace TopsyTurvyCakes.Pages.Admin
             get { return Id == null; }
         }
 
+        [BindProperty]
+
         public Recipe Recipe { get; set; }
 
         public AddEditRecipeModel(IRecipesService recipesService)
@@ -35,6 +37,8 @@ namespace TopsyTurvyCakes.Pages.Admin
 
         public async Task<IActionResult> OnPostAsync()
         {
+            Recipe.Id = Id.GetValueOrDefault();
+            await recipeService.SaveAsync(Recipe);
             return RedirectToPage("/Recipe", new { id = Id });
         }
     }
