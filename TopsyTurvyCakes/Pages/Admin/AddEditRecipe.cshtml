@@ -31,6 +31,10 @@
     <div class="form-group">
         <div class="col-md-offset-2 col-md-10">
             <button type="submit" class="btn btn btn-primary">Save</button>
+            @if (!Model.IsNewRecipe)
+            {
+                <button type="submit" asp-page-handler="Delete" class="btn btn btn-danger">Delete</button>
+            }
         </div>
     </div>
 </form>
