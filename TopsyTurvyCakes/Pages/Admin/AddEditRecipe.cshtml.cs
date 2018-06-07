@@ -40,6 +40,11 @@ namespace TopsyTurvyCakes.Pages.Admin
 
         public async Task<IActionResult> OnPostAsync()
         {
+            if (!ModelState.IsValid)
+            {
+                return Page();
+            }
+
             var recipe = Recipe = await recipeService.FindAsync(Id.GetValueOrDefault())
                 ?? new Recipe();
 
